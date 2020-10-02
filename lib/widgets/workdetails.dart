@@ -22,7 +22,8 @@ class _WorkDetailsState extends State<WorkDetails> {
           decoration: BoxDecoration(
             color: Colors.white,
             image: DecorationImage(
-                image: AssetImage('assets/p1.png'), fit: BoxFit.cover),
+                image: NetworkImage('https://iili.io/209TjR.png'),
+                fit: BoxFit.cover),
             borderRadius: BorderRadius.circular(30),
           ),
           child: CupertinoScrollbar(

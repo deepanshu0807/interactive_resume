@@ -12,7 +12,25 @@ class HomePage extends StatefulWidget {
   _HomePageState createState() => _HomePageState();
 }
 
+bool _first = true;
+
+double _left = 1600;
+double _top = 20;
+double _right = 20;
+double _bottom = 20;
+
 class _HomePageState extends State<HomePage> {
+  @override
+  void initState() {
+    _left = _first ? 0 : 1600;
+    // _top    = _first ?  70 : 20;
+    _right = _first ? 0 : 20;
+    _bottom = _first ? 25 : 20;
+
+    _first = !_first;
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
     return LayoutBuilder(builder: (context, size) {
@@ -70,10 +88,42 @@ class _HomePageState extends State<HomePage> {
                   ),
                 ),
               ),
-              Positioned(
-                bottom: 25.0,
-                left: 0.0,
-                right: 0.0,
+              // Positioned(
+              //   left: 20,
+              //   top: 200,
+              //   child: InkWell(
+              //     onTap: () {
+              //       setState(() {
+              //         _left = _first ? 0 : 1600;
+              //         // _top    = _first ?  70 : 20;
+              //         _right = _first ? 0 : 20;
+              //         _bottom = _first ? 25 : 20;
+
+              //         _first = !_first;
+              //       });
+              //     },
+              //     child: Container(
+              //       height: 40.h,
+              //       width: 50.w,
+              //       // height: 30.h,
+              //       color: Colors.white,
+              //       child: Center(
+              //         child: Text(
+              //           "Social",
+              //           style: GoogleFonts.tajawal(
+              //               color: Colors.black, fontSize: 10.sp),
+              //         ),
+              //       ),
+              //     ),
+              //   ),
+              // ),
+              AnimatedPositioned(
+                duration: Duration(milliseconds: 800),
+                bottom: _bottom,
+                left: _left,
+                right: _right,
+                //  top: _top,
+                curve: Curves.fastLinearToSlowEaseIn,
                 child: Bottom(),
               ),
             ],

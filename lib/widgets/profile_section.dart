@@ -10,7 +10,7 @@ class Profile extends StatelessWidget {
       children: [
         CircleAvatar(
           radius: 80,
-          backgroundImage: ExactAssetImage("assets/pic2.jpg"),
+          backgroundImage: NetworkImage("https://iili.io/209uQp.jpg"),
         ),
         Stack(
           children: [
@@ -168,8 +168,8 @@ class Profile extends StatelessWidget {
                       RichText(
                         text: TextSpan(children: [
                           WidgetSpan(
-                              child: Image.asset(
-                            'assets/google.png',
+                              child: Image.network(
+                            'https://iili.io/209q41.png',
                             height: 30.h,
                             //width: 30.w,
                           )),
@@ -192,8 +192,8 @@ class Profile extends StatelessWidget {
                       RichText(
                         text: TextSpan(children: [
                           WidgetSpan(
-                              child: Image.asset(
-                            'assets/call.png',
+                              child: Image.network(
+                            'https://iili.io/209nYg.png',
                             height: 30.h,
                             color: Colors.black,
                             //width: 30.w,

@@ -21,7 +21,8 @@ class _CertificationsState extends State<Certifications> {
           decoration: BoxDecoration(
             color: Colors.white,
             image: DecorationImage(
-                image: AssetImage('assets/p1.png'), fit: BoxFit.cover),
+                image: NetworkImage('https://iili.io/209TjR.png'),
+                fit: BoxFit.cover),
             borderRadius: BorderRadius.circular(30),
           ),
           child: CupertinoScrollbar(
@@ -34,6 +35,21 @@ class _CertificationsState extends State<Certifications> {
                   SizedBox(
                     height: 40.h,
                   ),
+                   CertificateDetails(
+                    name: "Complete Flutter Development",
+                    desc:
+                        "Includes API handling, database projects, Firebase and BLOC.\nPlatform: Udemy\nDuration: 19 Hours",
+                    link: "https://udemy-certificate.s3.amazonaws.com/image/UC-e7b6c465-cd1a-44c9-a820-4ed80d831a48.jpg",
+                    maxlines: 4,
+                  ),
+                  CertificateDetails(
+                    name: "Android Application Development",
+                    desc:
+                        "Introduction and hands on developing android applications.\nPlatform: Udemy\nDuration: 27 Hours",
+                    link:
+                        "https://udemy-certificate.s3.amazonaws.com/image/UC-9a80915a-5057-44fb-ada2-6f2419bbc1a7.jpg",
+                    maxlines: 4,
+                  ),
                   CertificateDetails(
                     name: "Java for Android",
                     desc:
@@ -41,13 +57,7 @@ class _CertificationsState extends State<Certifications> {
                     link: "https://iili.io/2avNnI.png",
                     maxlines: 4,
                   ),
-                  CertificateDetails(
-                    name: "Complete Flutter Development",
-                    desc:
-                        "Includes API handling, database projects, Firebase and BLOC.\nPlatform: Udemy\nDuration: 19 Hours",
-                    link: "",
-                    maxlines: 4,
-                  ),
+                 
                   CertificateDetails(
                     name: "Letter of Recommendation",
                     desc:

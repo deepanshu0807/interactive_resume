@@ -25,8 +25,8 @@ class _BottomState extends State<Bottom> {
               sizeEnlarge1 = !sizeEnlarge1;
             });
           },
-          child: Image.asset(
-            'assets/github.png',
+          child: Image.network(
+            'https://iili.io/209ova.png',
             color: sizeEnlarge1 ? Colors.black : Colors.white,
             height: sizeEnlarge1 ? 60 : 40,
             width: sizeEnlarge1 ? 60 : 40,
@@ -40,8 +40,8 @@ class _BottomState extends State<Bottom> {
               sizeEnlarge2 = !sizeEnlarge2;
             });
           },
-          child: Image.asset(
-            'assets/linkedin.png',
+          child: Image.network(
+            'https://iili.io/209ITv.png',
             color: sizeEnlarge2 ? Colors.blue[700] : Colors.white,
             height: sizeEnlarge2 ? 60 : 40,
             width: sizeEnlarge2 ? 60 : 40,
@@ -54,8 +54,8 @@ class _BottomState extends State<Bottom> {
               sizeEnlarge3 = !sizeEnlarge3;
             });
           },
-          child: Image.asset(
-            'assets/whatsapp.png',
+          child: Image.network(
+            'https://iili.io/209RCN.md.png',
             color: sizeEnlarge3 ? Colors.greenAccent : Colors.white,
             height: sizeEnlarge3 ? 60 : 40,
             width: sizeEnlarge3 ? 60 : 40,
@@ -69,8 +69,8 @@ class _BottomState extends State<Bottom> {
               sizeEnlarge4 = !sizeEnlarge4;
             });
           },
-          child: Image.asset(
-            'assets/fb.png',
+          child: Image.network(
+            'https://iili.io/209C3F.png',
             color: sizeEnlarge4 ? Colors.blue[700] : Colors.white,
             height: sizeEnlarge4 ? 55 : 35,
             width: sizeEnlarge4 ? 55 : 35,
@@ -84,8 +84,8 @@ class _BottomState extends State<Bottom> {
               sizeEnlarge5 = !sizeEnlarge5;
             });
           },
-          child: Image.asset(
-            'assets/insta.png',
+          child: Image.network(
+            'https://iili.io/209xyJ.png',
             color: sizeEnlarge5 ? Colors.black : Colors.white,
             height: sizeEnlarge5 ? 60 : 40,
             width: sizeEnlarge5 ? 60 : 40,
